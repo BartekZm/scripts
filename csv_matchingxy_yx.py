@@ -6,7 +6,7 @@ pandas.set_option('display.width', None)
 pandas.set_option('display.max_colwidth', None)
 
 #data format X,Y,Z
-df = pandas.read_csv("<OUTPUT_FILE_PATH>")
+df = pandas.read_csv("<INPUT_FILE_PATH>")
 
 for i, row in df.iterrows():
     match=df[(df['Y'] == row['Z']) & (df['Z'] == row['Y'])]
